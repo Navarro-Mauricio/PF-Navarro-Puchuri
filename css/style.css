@@ -1,28 +1,29 @@
-html {
-  height: 100%;
 
-}
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
+*{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+body {
   font-family: "Montserrat", sans-serif;
 }
 html {
-  position: relative;
+  height: 100%;
 }
+
+
 /* inicio */
 /* header */
 .logoo {
   display: flex;
 }
+
 .logo {
   display: flex;
-  width: 150px;
+  max-width: 150px;
   cursor: pointer;
-margin: 10px 0 10px 10px;}
+  margin: 10px 0 10px 10px;
+}
 
 header {
   width: 100%;
@@ -34,6 +35,7 @@ header {
   position: sticky;
   top: 0;
   border-bottom: #1014c5 2px solid;
+  z-index: 1000;
 }
 
 ul {
@@ -48,7 +50,6 @@ ul {
 }
 
 .headerTexto a {
-  margin: 0 8px;
   padding: 8px;
   color: #1014c5;
   text-decoration: none;
@@ -56,17 +57,19 @@ ul {
   border-radius: 20px;
 }
 
+.linkPaginas {
+  margin-right: 20px;
+}
+
 span {
-  background-image: linear-gradient(
-    to right,
-    #462523 0,
-           #cb9b51 22%, 
-    #f6e27a 45%,
-    #f6f2c0 50%,
-    #f6e27a 55%,
-    #cb9b51 78%,
-    #462523 100%
-    );
+  background-image: linear-gradient(to right,
+      #462523 0,
+      #cb9b51 22%,
+      #f6e27a 45%,
+      #f6f2c0 50%,
+      #f6e27a 55%,
+      #cb9b51 78%,
+      #462523 100%);
   color: transparent;
   /* aplica el css solo al área que ocupe el texto */
   -webkit-background-clip: text;
@@ -126,7 +129,7 @@ footer h2 {
 
 .video-yt {
   padding-bottom: 50px;
-} 
+}
 
 
 /* contacto */
@@ -139,7 +142,8 @@ form {
   border-radius: 20px;
 }
 
-label,.formulario {
+label,
+.formulario {
   color: white;
 }
 
@@ -155,21 +159,21 @@ form h2 {
 
 /* conocenos */
 .descConocenos {
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
 }
+
 .descConocenos img {
   width: 300px;
   padding: 20px;
 }
 
 .descConocenos p {
-padding: 0 0px 0 20px;
+  padding: 0 0px 0 20px;
 }
 
 h1 {
-font-family: "Montserrat", sans-serif; 
- text-align: center;
+  text-align: center;
   text-transform: uppercase;
   color: #1014c5;
 }
@@ -178,13 +182,69 @@ font-family: "Montserrat", sans-serif;
 .cat {
   padding: 20px;
 }
+
 .cat img {
-  width:300px;
+  max-width: 300px;
   height: auto;
 }
 
 .catPrincipal {
   width: 100%;
   display: flex;
-justify-content: center;
+  justify-content: space-evenly;
+}
+
+.producto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0 50px 0;
+}
+
+
+.producto img {
+  height: 200px;
+  margin: 30px;
+  transform: rotate(+10deg);
+}
+
+.posterHarry {
+  flex-direction: row-reverse;
+}
+
+.posterHarry img {
+  transform: rotate(-10deg);
+}
+
+@media (max-width:768px) {
+  .catPrincipal {
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .producto {
+    flex-direction: column;
+  }
+  header {
+    flex-direction: column;
+  }
+  .headerTexto {
+    display: inline-block;
+    font-size: 0.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  
+  .headerTexto a {
+    padding: 4px;
+    color: #1014c5;
+    text-decoration: none;
+    border: solid 2px #1014c5;
+    border-radius: 20px;
+  }
+  .linkPaginas {
+    margin-right: 0px;
+  }
 }
