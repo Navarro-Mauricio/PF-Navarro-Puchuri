@@ -4,60 +4,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Catálogo</title>
-  <link rel="stylesheet" href="../css/style.css">
-  <!-- favicon -->
+  <meta name="description" content="Te presentamos una selección diversa de stickers en vinilo. Elije entre una variedad de diseños para personalizar tus objetos y espacios de manera sencilla.">
+  <title>Catálogo | Sebs Calcos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/styles.css">
   <link rel="icon" type="image/png" href="../imgs/favicon.png">
-
-  <!-- recurso de swiffy slider -->
-  <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
-    async></script>
-
-  <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet"
-    crossorigin="anonymous">
 </head>
 
 <body>
   <header>
-    <!-- vuelve al inicio al hacer click en la imágen, sin importar en que pagina nos encontremos -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+      <div class="container-fluid logoo">
+        <a href="../index.html"> <img src="../imgs/logoPrincipal.png" alt="Logo Sebs Calcos" class="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse show" id="navbarNavAltMarkup">
+          <div class="navbar-nav linkPaginas">
+            <ul>
+              <li class="headerTexto"><a class="nav-link active" aria-current="page" href="../index.html">Inicio</a></li>
+              <li class="headerTexto"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+              <li class="headerTexto"><a class="nav-link" href="calidad.html"><span> Calidad Premium </span></a></li>
+              <li class="headerTexto"><a class="nav-link" href="contacto.html">Contactanos</a></li>
+              <li class="headerTexto"><a class="nav-link" href="nosotros.html">Sobre Nosotros</a></li>
+            </ul>
 
-    <div class="logoo">
-        <a href="index.html"> <img src="../imgs/logoPrincipal.png" alt="Logo Sebs Calcos" class="logo"></a>
-    </div>
-    <nav class="linkPaginas">
-        <ul>
-            <li class="headerTexto"><a href="../index.html">Inicio</a></li>
-            <li class="headerTexto"><a href="catalogo.html">Catálogo</a></li>
-            <li class="headerTexto calidadPremium"><a href="calidad.html"> <span> Calidad Premium </span></a>
-            </li>
-            <li class="headerTexto"><a href="contacto.html">Contactanos</a></li>
-            <li class="headerTexto"><a href="nosotros.html">Sobre Nosotros</a></li>
-
-        </ul>
+          </div>
+        </div>
+      </div>
     </nav>
-    <!-- <div><a class="boton" href="index.html">Tienda online</a></div> -->
+  </header>
+  <main>
+    <div class="catPrincipal">
 
-</header>
-  <div class="catPrincipal">
+      <div class="cat">
+        <h1> Música </h1>
+        <img src="https://temacalcos.com.ar/wp-content/uploads/2022/10/P-Taylor-03-scaled.jpg">
+      </div>
 
-    <div class="cat">
-      <h1> Música </h1>
-      <img src="https://temacalcos.com.ar/wp-content/uploads/2022/10/P-Taylor-03-scaled.jpg">
+      <div class="cat">
+        <h1>Fútbol</h1>
+        <img src="https://temacalcos.com.ar/wp-content/uploads/2022/11/PLANCHAS-QATAR-03.jpg">
+      </div>
+
+      <div class="cat">
+        <h1>Variado</h1>
+        <img src="https://temacalcos.com.ar/wp-content/uploads/2022/08/PLANCHA-06-scaled.jpg">
+      </div>
+
     </div>
 
-    <div class="cat">
-      <h1>Fútbol</h1>
-      <img src="https://temacalcos.com.ar/wp-content/uploads/2022/11/PLANCHAS-QATAR-03.jpg">
-    </div>
-
-    <div class="cat">
-      <h1>Variado</h1>
-      <img src="https://temacalcos.com.ar/wp-content/uploads/2022/08/PLANCHA-06-scaled.jpg">
-    </div>
-
-  </div>
-
-  <!-- <div class="imagenes series" >
+    <!-- <div class="imagenes series" >
             <img src="https://temacalcos.com.ar/wp-content/uploads/2023/03/plancha-tlou-4-CUATRO.jpg">
             <img src="https://temacalcos.com.ar/wp-content/uploads/2023/03/plancha-tlou-3-TRES.jpg">
             <img src="https://temacalcos.com.ar/wp-content/uploads/2022/08/PLANCHA-17-scaled.jpg">
@@ -74,7 +73,7 @@
             <img src="https://temacalcos.com.ar/wp-content/uploads/2022/11/P-BadBunny-05-scaled.jpg">
             <img src="https://temacalcos.com.ar/wp-content/uploads/2022/09/PLANCHA-JUSTIN-02-scaled.jpg">
           </div> -->
-
+  </main>
   <footer>
 
     <div class="redes">
@@ -87,6 +86,9 @@
     </div>
 
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
 
 </body>
 

@@ -1,0 +1,24 @@
+footer {
+	height: auto;
+	width: 100%;
+	background-color: $background-color_2;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px;
+	bottom: 0;
+	margin-top: auto;
+
+	h2 {
+		color: $color_3;
+		font-size: 1rem;
+	}
+
+	.redes {
+		margin: 20px;
+	}
+
+	.copyright {
+		margin: 20px;
+	}
+}
