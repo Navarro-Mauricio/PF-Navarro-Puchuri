@@ -1,0 +1,319 @@
+header nav {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  border-bottom: #1014c5 2px solid;
+  z-index: 1000;
+  align-items: center;
+}
+header nav .container-fluid {
+  width: 100% !important;
+  padding: 0;
+  display: flex;
+}
+header nav .container-fluid button {
+  margin: 0 18px;
+}
+header nav .container-fluid a .logo {
+  max-width: 150px;
+  cursor: pointer;
+  margin: 10px 0 10px 18px;
+}
+header nav .linkPaginas ul {
+  list-style: none;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100%;
+}
+header nav .linkPaginas ul .headerTexto {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  display: inline-flex;
+  padding: 0 0.4rem;
+}
+header nav .linkPaginas ul .headerTexto span {
+  background-image: linear-gradient(to right, #462523 0, #cb9b51 22%, #f6e27a 45%, #f6f2c0 50%, #f6e27a 55%, #cb9b51 78%, #462523 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+}
+header nav .linkPaginas ul .headerTexto a {
+  padding: 0.4rem 0.7rem !important;
+  color: #1014c5 !important;
+  text-decoration: none;
+  border: solid 2px #1014c5 !important;
+  border-radius: 20px;
+}
+
+@media (min-width: 991px) {
+  .navbar-collapse {
+    justify-content: end;
+    padding-right: 0.8% !important;
+  }
+}
+@media (max-width: 991px) {
+  .collapse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+  }
+  .linkPaginas ul .headerTexto {
+    padding: 0 0.05rem !important;
+  }
+}
+footer {
+  height: auto;
+  width: 100%;
+  background-color: #1014c5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  bottom: 0;
+  margin-top: auto;
+}
+footer h2 {
+  color: white;
+  font-size: 1rem;
+}
+footer .redes {
+  margin: 20px;
+}
+footer .copyright {
+  margin: 20px;
+}
+
+.form-responsive {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-responsive .contact-form {
+  background-color: #f2f2f2;
+  padding: 40px;
+  border-radius: 10px;
+  width: 50%;
+  margin: 5%;
+}
+.form-responsive .contact-form label {
+  color: black;
+  margin-bottom: 10px;
+}
+.form-responsive .contact-form .heading {
+  font-size: 24px;
+  color: black;
+  margin-bottom: 12px;
+  font-weight: bold;
+  display: block;
+}
+.form-responsive .contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+.form-responsive .contact-form input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.form-responsive .contact-form input:focus {
+  outline: none;
+  box-shadow: 0 0 5px #1014c5;
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+.form-responsive .contact-form textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.form-responsive .contact-form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 5px #1014c5;
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+.form-responsive .contact-form button[type=submit] {
+  background-color: #1014c5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.form-responsive .contact-form button[type=submit]:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+}
+
+@media (max-width: 768px) {
+  .contact-form {
+    padding: 6% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .form-responsive .contact-form {
+    width: 90% !important;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #1014c5;
+  margin: 10px;
+}
+
+.calidad-flex .container {
+  width: 60%;
+  padding-bottom: 2%;
+}
+.calidad-flex .container .video-yt {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+  width: 100%;
+}
+.calidad-flex .container .video-yt iframe {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.descConocenos {
+  display: flex;
+  align-items: center;
+}
+.descConocenos img {
+  width: 300px;
+  padding: 20px;
+}
+.descConocenos p {
+  padding: 0 0px 0 20px;
+}
+
+.carousel .carousel-inner .carousel-item img {
+  width: 100%;
+}
+
+.catPrincipal {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.catPrincipal .cat {
+  padding: 20px;
+  width: 30%;
+}
+.catPrincipal .cat img {
+  width: 100%;
+}
+
+.producto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0 50px 0;
+}
+.producto img {
+  height: 200px;
+  margin: 30px;
+  transform: rotate(10deg);
+}
+.producto h2 {
+  padding: 10px !important;
+  text-align: center;
+}
+
+.posterHarry {
+  flex-direction: row-reverse;
+}
+.posterHarry img {
+  transform: rotate(-10deg);
+}
+
+@media (max-width: 768px) {
+  .catPrincipal {
+    flex-direction: column;
+    align-items: center;
+  }
+  .catPrincipal .cat {
+    width: 90%;
+    max-height: 90%;
+    padding: 10px 0;
+  }
+  .producto {
+    flex-direction: column;
+  }
+  header {
+    flex-direction: column;
+  }
+  header nav .linkPaginas {
+    display: flex;
+    margin-right: 0px;
+  }
+  header nav .linkPaginas ul .headerTexto {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 0.5rem !important;
+  }
+  header nav .linkPaginas ul .headerTexto a {
+    padding: 0.3rem 0.6rem;
+    color: #1014c5;
+    text-decoration: none;
+    border: solid 2px #1014c5;
+    border-radius: 2rem;
+    flex-wrap: wrap;
+  }
+  .descConocenos {
+    flex-direction: column;
+  }
+  .classConocenos {
+    padding: 10px !important;
+    margin: 0 !important;
+  }
+  .calidad-flex .container {
+    min-width: 99%;
+    padding-bottom: 3%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
