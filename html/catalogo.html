@@ -4,10 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Te presentamos una selección diversa de stickers en vinilo. Elije entre una variedad de diseños para personalizar tus objetos y espacios de manera sencilla.">
+  <meta name="description"
+    content="Te presentamos una selección diversa de stickers en vinilo. Elije entre una variedad de diseños para personalizar tus objetos y espacios de manera sencilla.">
+  <meta name="keywords"
+    content="Stickers en vinilo, Vinilos decorativos, Stickers personalizados, Diseño de stickers, Stickers CABA, Vinilos CABA, Pegatinas CABA, Comprar stickers, Tienda de stickers, Stickers de alta calidad, Stickers para decoración, Stickers para laptops, Pegatinas para autos, Pegatinas Emocionales, Vinilos adhesivos, Stickers baratos, Envío de stickers, Pegatinas a medida, Compra online de stickers, Vinilos para paredes, Vinilos para ventanas, Vinilos para negocios, Vinilos personalizados CABA, Stickers de calidad premium, Stickers duraderos, Stickers originales, Ofertas de stickers, Vinilos para eventos, Vinilos para escaparates, Decoración con vinilos, Stickers creativos, Vinilos de diseño, Vinilos de alta resolución, Vinilos resistentes al agua, Vinilos para negocios locales, Pegatinas únicas, Stickers de colección, Vinilos exclusivos, Promoción de negocios con stickers, Tienda de stickers en línea, Stickers temáticos, Compra tus stickers hoy">
+
   <title>Catálogo | Sebs Calcos</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="icon" type="image/png" href="../imgs/favicon.png">
 </head>
@@ -24,7 +34,8 @@
         <div class="collapse navbar-collapse show" id="navbarNavAltMarkup">
           <div class="navbar-nav linkPaginas">
             <ul>
-              <li class="headerTexto"><a class="nav-link active" aria-current="page" href="../index.html">Inicio</a></li>
+              <li class="headerTexto"><a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
               <li class="headerTexto"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
               <li class="headerTexto"><a class="nav-link" href="calidad.html"><span> Calidad Premium </span></a></li>
               <li class="headerTexto"><a class="nav-link" href="contacto.html">Contactanos</a></li>
@@ -37,42 +48,76 @@
     </nav>
   </header>
   <main>
-    <div class="catPrincipal">
-
-      <div class="cat">
-        <h1> Música </h1>
-        <img src="https://temacalcos.com.ar/wp-content/uploads/2022/10/P-Taylor-03-scaled.jpg">
-      </div>
-
-      <div class="cat">
-        <h1>Fútbol</h1>
-        <img src="https://temacalcos.com.ar/wp-content/uploads/2022/11/PLANCHAS-QATAR-03.jpg">
-      </div>
-
-      <div class="cat">
-        <h1>Variado</h1>
-        <img src="https://temacalcos.com.ar/wp-content/uploads/2022/08/PLANCHA-06-scaled.jpg">
-      </div>
-
+    <div class="textCatalogo">
+      <h1>
+        Mirá nuestro Catálogo
+      </h1>
+      <h2 class="h2Catalogo">
+        deslizá para ver ->
+      </h2>
+    </div>
+    <div class="buttons">
+      <button id="button1">Anime</button>
+      <button id="button2">Variados</button>
+      <button id="button3">Fútbol</button>
     </div>
 
-    <!-- <div class="imagenes series" >
-            <img src="https://temacalcos.com.ar/wp-content/uploads/2023/03/plancha-tlou-4-CUATRO.jpg">
-            <img src="https://temacalcos.com.ar/wp-content/uploads/2023/03/plancha-tlou-3-TRES.jpg">
-            <img src="https://temacalcos.com.ar/wp-content/uploads/2022/08/PLANCHA-17-scaled.jpg">
-          </div>
-        
-          <div class="imagenes peliculas" >
-            <img src="https://temacalcos.com.ar/wp-content/uploads/2023/01/P-Star-Wars-03-scaled.jpg">
-            <img src="https://temacalcos.com.ar/wp-content/uploads/2022/08/PLANCHA-26-scaled.jpg">
-            <img src="https://temacalcos.com.ar/wp-content/uploads/2022/08/PLANCHA-09-scaled.jpg">
-          </div>
-        
-          <div class="imagenes musica">
-            <img src="https://temacalcos.com.ar/wp-content/uploads/2022/10/P-Taylor-03-scaled.jpg">
-            <img src="https://temacalcos.com.ar/wp-content/uploads/2022/11/P-BadBunny-05-scaled.jpg">
-            <img src="https://temacalcos.com.ar/wp-content/uploads/2022/09/PLANCHA-JUSTIN-02-scaled.jpg">
-          </div> -->
+    <section id="section1" class="movies containerrr">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="../imgs/catalogoSlider1/Hoja de contacto-001.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../imgs/catalogoSlider1/Hoja de contacto-002.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../imgs/catalogoSlider1/Hoja de contacto-003.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../imgs/catalogoSlider1/Hoja de contacto-004.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../imgs/catalogoSlider1/Hoja de contacto-005.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../imgs/catalogoSlider1/Hoja de contacto-006.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../imgs/catalogoSlider1/Hoja de contacto-007.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../imgs/catalogoSlider1/Hoja de contacto-008.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../imgs/catalogoSlider1/Hoja de contacto-009.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../imgs/catalogoSlider1/Hoja de contacto-010.jpg" alt=""></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section2" class="movies containerrr">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="../imgs/catalogoSlider2/Hoja de contacto-001.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../imgs/catalogoSlider2/Hoja de contacto-002.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../imgs/catalogoSlider2/Hoja de contacto-003.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../imgs/catalogoSlider2/Hoja de contacto-004.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../imgs/catalogoSlider2/Hoja de contacto-005.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../imgs/catalogoSlider2/Hoja de contacto-006.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../imgs/catalogoSlider2/Hoja de contacto-007.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../imgs/catalogoSlider2/Hoja de contacto-008.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../imgs/catalogoSlider2/Hoja de contacto-009.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../imgs/catalogoSlider2/Hoja de contacto-010.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../imgs/catalogoSlider2/Hoja de contacto-011.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../imgs/catalogoSlider2/Hoja de contacto-012.jpg" alt=""></div>
+
+        </div>
+      </div>
+    </section>
+    <section id="section3" class="movies containerrr">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="../imgs/catalogoSlider3/Hoja de contacto-001.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../imgs/catalogoSlider3/Hoja de contacto-002.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../imgs/catalogoSlider3/Hoja de contacto-003.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../imgs/catalogoSlider3/Hoja de contacto-001.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../imgs/catalogoSlider3/Hoja de contacto-002.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../imgs/catalogoSlider3/Hoja de contacto-003.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../imgs/catalogoSlider3/Hoja de contacto-001.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../imgs/catalogoSlider3/Hoja de contacto-002.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../imgs/catalogoSlider3/Hoja de contacto-003.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../imgs/catalogoSlider3/Hoja de contacto-001.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../imgs/catalogoSlider3/Hoja de contacto-002.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../imgs/catalogoSlider3/Hoja de contacto-003.jpg" alt=""></div>
+
+        </div>
+      </div>
+    </section>
+
   </main>
   <footer>
 
@@ -86,10 +131,16 @@
     </div>
 
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-    crossorigin="anonymous"></script>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="../js/script.js"></script>
 </body>
 
 </html>

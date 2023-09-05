@@ -1,0 +1,34 @@
+.calidad-flex {
+	.container {
+		width: 60%;
+		padding-bottom: 2%;
+
+		.video-yt {
+			overflow: hidden;
+			padding-top: 56.25%;
+			position: relative;
+			width: 100%;
+
+			iframe {
+				height: 100%;
+				position: absolute;
+				top: 0;
+				right: 0;
+				left: 0;
+				bottom: 0;
+				width: 100%;
+
+			}
+		}
+	}
+
+}
+
+@media (max-width:768px) {
+	.calidad-flex {
+		.container {
+			min-width: 99%;
+			padding-bottom: 3%;
+		}
+	}
+}

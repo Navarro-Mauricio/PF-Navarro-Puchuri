@@ -1,0 +1,30 @@
+.descConocenos {
+	display: flex;
+	align-items: center;
+
+
+	img {
+		width: 40%;
+		padding: 30px;
+	}
+
+	p {
+		padding: 0 0 0 30px;
+		font-family: 'Montserrat', sans-serif;
+	}
+}
+
+@media (max-width:768px) {
+	.descConocenos {
+		img {
+			width: 300px;
+		}
+
+		flex-direction: column;
+	}
+
+	.classConocenos {
+		padding: 10px !important;
+		margin: 0 !important;
+	}
+}
